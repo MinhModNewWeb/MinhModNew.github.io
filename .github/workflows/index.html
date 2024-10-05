@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Mod File Skill 2 Dạng</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0072ff;
+        }
+        label {
+            font-weight: 400;
+            margin-bottom: 5px;
+            display: block;
+            color: #555;
+        }
+        input[type="text"], input[type="submit"] {
+            font-family: 'Roboto', sans-serif;
+            padding: 14px;
+            margin-top: 5px;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            font-size: 16px;
+        }
+        input[type="text"]:focus {
+            border-color: #0072ff;
+            box-shadow: 0 0 5px rgba(0, 114, 255, 0.5);
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #0072ff;
+            color: white;
+            border: none; 
+            cursor: pointer; 
+            margin-top: 20px; 
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        input[type="submit"]:hover {     
+            background-color: #005bb5; 
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mod File Skill 2 Dạng</h1>
+        <form method="POST">
+            <div class="input-group">
+                <label for="id_name">ID Name:</label>
+                <input type="text" id="id_name" name="id_name" required placeholder="...">
+            </div>
+            <div class="input-group">
+                <label for="cre_file">Nguồn Trong File:</label>
+                <input type="text" id="cre_file" name="cre_file" required placeholder="...">
+            </div>
+            <div class="input-group">
+                <label for="skinid011">ID Skin Trước Khi Biến Hình:</label>
+                <input type="text" id="skinid011" name="skinid011" required placeholder="...">
+            </div>
+            <div class="input-group">
+                <label for="skinid0">ID Skin Sau Khi Biến Hình:</label>
+                <input type="text" id="skinid0" name="skinid0" required placeholder="...">
+            </div>
+
+            <input type="submit" value="RUN">
+        </form>
+        <div class="footer">© YTB: Minh Mod New</div>
+    </div>
+</body>
+</html>
